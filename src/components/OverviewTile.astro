@@ -1,0 +1,64 @@
+---
+export interface Props {
+    subheading: string;
+    heading: string;
+    data: object;
+}
+
+const { subheading, heading, data } = Astro.props;
+const linkText = "All " + subheading + " data";
+---
+
+<div>
+    <h1>{ subheading }</h1>
+    <h2 class="heading-s">{ heading }</h2>
+    <div class="data">
+        {data.map((item) => (
+            <div>
+                <p class="label">{item.label}</p>
+                <p class="value" style={"color: var(" + item.color + ")"}>{item.value}</p>
+            </div>
+        ))}
+    </div>
+</div>
+
+<style>
+    div {
+        background-color: var(--color-light-grey);
+        width: 100%;
+        padding: 16px;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        color: var(--color-secondary-text);
+        font-family: 'GDS Transport', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .data {
+        display: flex;
+        flex-grow: 1;
+        align-content: flex-end;
+        padding: 0;
+        text-align: center;
+        margin-top: 8px;
+    }
+
+    .data div {
+        padding: 0;
+    }
+
+    .label {
+        color: var(--color-secondary-text);
+        font-size: 16px;
+    }
+
+    .value {
+        font-family: 'GDS Transport Bold', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 32px;
+    }
+</style>

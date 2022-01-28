@@ -1,0 +1,166 @@
+:root {
+    // Text
+    --color-text: var(--color-black);
+    --color-secondary-text: var(--color-dark-grey);
+
+    // Links
+    --color-link: var(--color-blue);
+    --color-link-hover: var(--color-dark-blue);
+    --color-link-visited: var(--color-purple);
+    --color-link-active: var(--color-black);
+
+    // Border
+    --color-border: var(--color-mid-grey);
+    --color-border-input: var(--color-black);
+
+    // Focus
+    --color-focus: var(--color-yellow);
+    --color-focus-text: var(--color-black)
+
+    // Error
+    --color-error: var(--color-red);
+
+    // Success
+    --color-success: var(--color-green);
+
+    // Brand
+    --color-brand: var(--color-blue);
+
+    // Palette
+    --color-red: #d4351c;
+    --color-yellow: #ffdd00;
+    --color-green: #00703c;
+    --color-blue: #1d70b8;
+    --color-dark-blue: #003078;
+    --color-light-blue: #5694ca;
+    --color-purple: #4c2c92;
+    --color-black: #0b0c0c;
+    --color-dark-grey: #505a5f;
+    --color-mid-grey: #b1b4b6;
+    --color-light-grey: #f3f2f1;
+    --color-white: #ffffff;
+    --color-light-purple: #6f72af;
+    --color-bright-purple: #912b88;
+    --color-pink: #d53880;
+    --color-light-pink: #f499be;
+    --color-orange: #f47738;
+    --color-brown: #b58840;
+    --color-light-green: #85994b;
+    --color-turquoise: #28a197;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'GDS Transport';
+    font-weight: 400;
+    src: url(/fonts/gds-transport.woff2) format('woff2'), url(/fonts/gds-transport.woff) format('woff');
+}
+
+@font-face {
+    font-family: 'GDS Transport Bold';
+    font-weight: 700;
+    src: url(/fonts/gds-transport-bold.woff2) format('woff2'), url(/fonts/gds-transport-bold.woff) format('woff');
+}
+
+body {
+    color: var(--color-text);
+    font-family: 'GDS Transport', sans-serif;
+    font-size: 19px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.govuk-container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'GDS Transport Bold', sans-serif;
+    font-weight: 700;
+
+    &.heading-xl {
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    &.heading-l {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    &.heading-m {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    &.heading-s {
+        font-size: 19px;
+        line-height: 24px;
+    }
+}
+
+a {
+    color: var(--color-link);
+
+    &:hover {
+        color: var(--color-link-hover);
+    }
+}
+
+.tag {
+    font-family: 'GDS Transport Bold', sans-serif;
+    background-color: #DBE8F4;
+    color: var(--color-blue);
+    text-transform: uppercase;
+    padding: 4px 8px;
+}

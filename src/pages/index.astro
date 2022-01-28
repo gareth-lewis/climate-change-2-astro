@@ -1,19 +1,236 @@
 ---
-// Component imports and setup JavaScript go here!
+// Component Imports
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ArticleSummary from '../components/Article/ArticleSummary.astro';
+import RelatedLink from '../components/RelatedLink.astro';
+import OverviewTile from '../components/OverviewTile.astro';
+
+let serviceName = "Climate Change";
+
+// All variables are available to use in the HTML template below.
+let title = "Climate Change";
+let description = "The perfect starter for your perfect blog.";
+let permalink = "https://climate-change.data.gov.uk";
+
+// Hero content
+let heading = "Measuring greenhouse gas emissions";
+let subheading = "The UK is required to report its estimated greenhouse gas (GHG) emissions on a range of different bases to fulfil a wide range of international agreements as well as for domestic policy making purposes.";
+let callToAction = "Read article";
+
+// Overview
+const overviewTiles = [
+	{
+		subheading: "Climate and weather",
+		heading: "Annual mean temperature (&deg;C) for the UK",
+		data: [
+			{
+				label: "1884",
+				value: "7.8",
+				color: "--color-brand"
+			},
+			{
+				label: "2020",
+				value: "9.3",
+				color: "--color-brand"
+			},
+			{
+				label: "Difference",
+				value: "+1.5",
+				color: "--color-red"
+			},
+		]
+	},
+	{
+		subheading: "Emissions",
+		heading: "Greenhouse gas emissions (Mt CO2e)",
+		data: [
+			{
+				label: "1990",
+				value: "2635",
+				color: "--color-brand"
+			},
+			{
+				label: "2019",
+				value: "1598",
+				color: "--color-brand"
+			},
+			{
+				label: "Difference",
+				value: "-1037",
+				color: "--color-green"
+			},
+		]
+	},
+	{
+		subheading: "Drivers",
+		heading: "Fossil fuel energy use (Mtoe) for the four highest sectors in the UK",
+		data: [
+			{
+				label: "1990",
+				value: "184.96",
+				color: "--color-brand"
+			},
+			{
+				label: "2019",
+				value: "129.63",
+				color: "--color-brand"
+			},
+			{
+				label: "Difference",
+				value: "-55.32",
+				color: "--color-green"
+			},
+		]
+	},
+	{
+		subheading: "Impacts",
+		heading: "Ecological status of surface waters in England, 2019",
+		data: [
+			{
+				label: "Good",
+				value: "16%",
+				color: "--color-green"
+			},
+			{
+				label: "Other",
+				value: "84%",
+				color: "--color-red"
+			},
+		]
+	},
+	{
+		subheading: "Mitigation",
+		heading: "Renewable energy share in total energy consumption, UK, 2020",
+		data: [
+			{
+				label: "Renewable",
+				value: "16%",
+				color: "--color-red"
+			},
+			{
+				label: "Non-renewable",
+				value: "84%",
+				color: "--color-green"
+			},
+		]
+	},
+	{
+		subheading: "Adaptation",
+		heading: "New planting of UK woodlands, thousand hectares",
+		data: [
+			{
+				label: "1976",
+				value: "28.3",
+				color: "--color-brand"
+			},
+			{
+				label: "2021",
+				value: "13.29",
+				color: "--color-brand"
+			},
+			{
+				label: "Difference",
+				value: "-15.01",
+				color: "--color-red"
+			},
+		]
+	},
+]
+
+// Data Fetching: List all Markdown posts in the repo.
+let allPosts = await Astro.fetchContent('./articles/*.md');
+allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
+
+// Related Links
+const relatedLinks = [
+	{
+		title: "PMD - Publish My Data",
+		href: "",
+		description: "IDS is bringing together data from across the UK government and Devolved Administrations, with the Data Explorer providing new ways to search across and filter datasets to give you the data you need."
+	},
+	{
+		title: "Met Office",
+		href: "",
+		description: "Met Office weather forecasts for the UK. World leading weather services for the public."
+	},
+	{
+		title: "Forestry Research",
+		href: "",
+		description: "Forest Research is Great Britain's principal organisation for forestry and tree related research and is internationally renowned for the provision of evidence..."
+	},
+	{
+		title: "Department for Business, Energy &amp; Industrial Strategy",
+		href: "",
+		description: "Building a stronger, greener future by fighting coronavirus, tackling climate change, unleashing innovation and making the UK a great place to work and do business..."
+	},
+]
 ---
 
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<title>Welcome to Astro</title>
-		<style>
-			/* scoped CSS styles go here: */
-			/* h1 { ... } */
-		</style>
+		<BaseHead title={title} description={description} permalink={permalink} />
 	</head>
 
 	<body>
-		<h1>Welcome to <a href="https://astro.build/">Astro</a></h1>
+		<Header serviceName={serviceName} alternativeAccent={true} />
+
+		<Hero heading={heading} description={subheading} callToAction={callToAction} heroImage="" alt="" />
+
+		<div class="govuk-container">
+			<main>
+				<section class="overview">
+					{overviewTiles.map((tile) => (
+						<OverviewTile subheading={ tile.subheading } heading={ tile.heading } data={ tile.data } />
+					))}
+				</section>
+				<div class="content">
+					<section class="articles" aria-label="Blog post list">
+						<h1 class="heading-l">Articles</h1>
+						{allPosts.map((article) => <ArticleSummary article={article} />)}
+						<a href="/articles">View all articles</a>
+					</section>
+					<section class="related-links border-top">
+						<h1 class="heading-m">Related links</h1>
+						{relatedLinks.map((relatedLink) => <RelatedLink title={relatedLink.title} href={relatedLink.href} description={relatedLink.description} />)}
+					</section>
+				</div>
+			</main>
+		</div>
 	</body>
 </html>
+
+<style>
+	.overview {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		margin-bottom: 64px;
+		gap: 16px;
+	}
+
+	main {
+		margin-top: -48px;
+	}
+
+	.content {
+		display: grid;
+		grid-template-columns: 2fr 1fr;
+		gap: 48px;
+	} 
+
+	.articles h1, .related-links h1 {
+		margin-bottom: 24px;
+	}
+
+	.articles a {
+		text-decoration: none;
+		font-family: 'GDS Transport Bold', sans-serif;
+		font-weight: 700;
+	}
+
+	.border-top {
+		border-top: 4px solid var(--color-brand);
+		padding-top: 16px;
+	}
+</style>

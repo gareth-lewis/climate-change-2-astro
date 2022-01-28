@@ -1,0 +1,57 @@
+---
+export interface Props {
+    heading: string;
+    description: string;
+    callToAction: string;
+    heroImage: string;
+    alt: string;
+}
+
+const { heading, description, callToAction } = Astro.props;
+---
+
+<section class="page-hero">
+    <div class="govuk-container">
+        <div class="hero-content">
+            <div class="summary">
+                <h1 class="heading-xl">{ heading }</h1>
+                <p>{ description }</p>
+                <button>{ callToAction }</button>
+            </div>
+            <!-- <img src="" alt="" /> -->
+        </div>
+    </div>
+</section>
+
+<style>
+    .page-hero {
+        background-color: var(--color-brand);
+        color: var(--color-white);
+        padding: 56px 0 96px;
+    }
+
+    .hero-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    h1 {
+        margin-bottom: 16px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 32px;
+    }
+
+    button {
+        font-family: 'GDS Transport Bold', sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        background-color: var(--color-white);
+        border: 0;
+        color: var(--color-brand);
+        padding: 8px 16px;
+    }
+</style>

@@ -1,0 +1,49 @@
+---
+export interface Props {
+    article: any
+}
+
+const { article } = Astro.props;
+---
+
+<article class="featured-article">
+    <header>
+        <p class="publishDate"><span class="tag">New Article</span>{ article.publishDate }</p>
+        <a href={ article.url }><h1 class="heading-l">{ article.title }</h1></a>
+    </header>
+    <p>{ article.summary }</p>
+    <a href={ article.url }>Read article</a>
+</article>
+
+<style>
+    .featured-article {
+        max-width: 80%;
+    }
+
+    a {
+        font-family: 'GDS Transport Bold', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    h1 {
+        margin-bottom: 24px;
+    }
+
+    p {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 24px;
+    }
+
+    .publishDate {
+        font-size: 19px;
+        line-height: 24px;
+        color: var(--color-secondary-text);
+        margin-bottom: 8px;
+    }
+
+    .tag {
+        margin-right: 8px;
+    }
+</style>

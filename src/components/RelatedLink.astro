@@ -1,0 +1,30 @@
+---
+export interface Props {
+    title: string;
+    href: string;
+    description: string;
+}
+
+const { title, href, description } = Astro.props;
+---
+
+<div class="related-link">
+    <a href={ href }>{ title }</a>
+    <p>{ description }</p>
+</div>
+
+<style>
+    a {
+        font-family: 'GDS Transport Bold', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    p {
+        margin-top: 8px;
+    }
+
+    div {
+        margin-bottom: 40px;
+    }
+</style>

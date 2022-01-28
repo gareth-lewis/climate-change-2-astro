@@ -1,0 +1,44 @@
+---
+export interface Props {
+    article: any
+}
+
+const { article } = Astro.props;
+---
+
+<article class="article-preview">
+    <header>
+        <p class="publish-date">{ article.publishDate }</p>
+        <a href={ article.url }><h1 class="heading-m">{ article.title }</h1></a>
+    </header>
+    <p>{ article.description }</p>
+    <a href={ article.url }>Read article</a>
+</article>
+
+<style>
+    article {
+        padding-bottom: 40px;
+        border-bottom: 1px solid var(--color-border);
+        margin-bottom: 40px;
+    }
+
+    a {
+        font-family: 'GDS Transport Bold', sans-serif;
+        font-weight: 700;
+        text-decoration: none;
+    }
+
+    h1 {
+        margin-bottom: 24px;
+    }
+
+    p {
+        margin-bottom: 24px;
+    }
+
+    .publish-date {
+        font-size: 16px;
+        color: var(--color-secondary-text);
+        margin-bottom: 0;
+    }
+</style>
