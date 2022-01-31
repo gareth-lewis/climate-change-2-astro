@@ -14,7 +14,7 @@ description: >
     Recent decades in the UK have been warmer, wetter and sunnier than in the 20th century, with 2020 being the third warmest, fifth wettest and eighth sunniest year since records began in 1884.
 ---
 
-The latest report from the Intergovernmental Panel on Climate Change (IPCC), a United Nations body providing science-led comprehensive assessments of climate change science, found that climate change is already happening, with global surface temperatures between 2001 and 2020 around 1°C higher than during 1850 to 1900, and that this is having effects across the world and in the UK including making extreme weather events more likely.
+<!-- The latest report from the Intergovernmental Panel on Climate Change (IPCC), a United Nations body providing science-led comprehensive assessments of climate change science, found that climate change is already happening, with global surface temperatures between 2001 and 2020 around 1°C higher than during 1850 to 1900, and that this is having effects across the world and in the UK including making extreme weather events more likely. -->
 
 The report found unequivocal evidence that observed warming of the climate is a consequence of emissions from human activity that has increased the concentration of greenhouse gases in the global atmosphere. Human induced climate change has already affected the severity and frequency of many types of extreme weather and climate events.
 

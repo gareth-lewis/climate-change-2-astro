@@ -1,0 +1,47 @@
+---
+export interface Props {
+    title: string;
+    publishDate: string;
+    summary: string;
+}
+
+const { title, publishDate, summary } = Astro.props;
+---
+
+<header>
+    <div class="govuk-container">
+        <div class="header-content">
+            <div class="article-summary">
+                <h1 class="heading-xl">{ title }</h1>
+                <!-- <p>{ publishDate }</p> -->
+                <p class="summary">{ summary }</p>
+            </div>
+            <div>
+            
+            </div>
+        </div>
+    </div>
+</header>
+
+<style>
+    header {
+        background: var(--color-light-grey);
+        padding: 72px 0 64px;
+        margin-bottom: 64px;
+    }
+
+    .header-content {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 48px;
+    }
+
+    h1 {
+        margin-bottom: 32px;
+    }
+
+    .summary {
+        font-size: 24px;
+        line-height: 32px;
+    }
+</style>
