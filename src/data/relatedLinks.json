@@ -1,0 +1,22 @@
+[
+    {
+        "title": "PMD - Publish My Data",
+        "href": "https://beta.gss-data.org.uk",
+        "description": "IDS is bringing together data from across the UK government and Devolved Administrations, with the Data Explorer providing new ways to search across and filter datasets to give you the data you need."
+    },
+    {
+        "title": "Met Office",
+        "href": "https://www.metoffice.gov.uk",
+        "description": "Met Office weather forecasts for the UK. World leading weather services for the public."
+    },
+    {
+        "title": "Forest Research",
+        "href": "https://www.forestresearch.gov.uk",
+        "description": "Forest Research is Great Britain's principal organisation for forestry and tree related research and is internationally renowned for the provision of evidence..."
+    },
+    {
+        "title": "Department for Business, Energy &amp; Industrial Strategy",
+        "href": "https://www.gov.uk/government/organisations/department-for-environment-food-rural-affairs",
+        "description": "Building a stronger, greener future by fighting coronavirus, tackling climate change, unleashing innovation and making the UK a great place to work and do business..."
+    }
+]

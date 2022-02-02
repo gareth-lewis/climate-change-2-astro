@@ -1,0 +1,118 @@
+[
+    {
+        "subheading": "Climate and weather",
+        "heading": "Annual mean temperature (&deg;C) for the UK",
+        "data": [
+            {
+                "label": "1884",
+                "value": "7.8",
+                "color": "--color-brand"
+            },
+            {
+                "label": "2020",
+                "value": "9.3",
+                "color": "--color-brand"
+            },
+            {
+                "label": "Difference",
+                "value": "+1.5",
+                "color": "--color-red"
+            }
+        ]
+    },
+    {
+        "subheading": "Emissions",
+        "heading": "Greenhouse gas emissions (Mt CO2e)",
+        "data": [
+            {
+                "label": "1990",
+                "value": "2635",
+                "color": "--color-brand"
+            },
+            {
+                "label": "2019",
+                "value": "1598",
+                "color": "--color-brand"
+            },
+            {
+                "label": "Difference",
+                "value": "-1037",
+                "color": "--color-green"
+            }
+        ]
+    },
+    {
+        "subheading": "Drivers",
+        "heading": "Fossil fuel energy use (Mtoe) for the four highest sectors in the UK",
+        "data": [
+            {
+                "label": "1990",
+                "value": "184.96",
+                "color": "--color-brand"
+            },
+            {
+                "label": "2019",
+                "value": "129.63",
+                "color": "--color-brand"
+            },
+            {
+                "label": "Difference",
+                "value": "-55.32",
+                "color": "--color-green"
+            }
+        ]
+    },
+    {
+        "subheading": "Impacts",
+        "heading": "Ecological status of surface waters in England, 2019",
+        "data": [
+            {
+                "label": "Good",
+                "value": "16%",
+                "color": "--color-green"
+            },
+            {
+                "label": "Other",
+                "value": "84%",
+                "color": "--color-red"
+            }
+        ]
+    },
+    {
+        "subheading": "Mitigation",
+        "heading": "Renewable energy share in total energy consumption, UK, 2020",
+        "data": [
+            {
+                "label": "Renewable",
+                "value": "16%",
+                "color": "--color-red"
+            },
+            {
+                "label": "Non-renewable",
+                "value": "84%",
+                "color": "--color-green"
+            }
+        ]
+    },
+    {
+        "subheading": "Adaptation",
+        "heading": "New planting of UK woodlands, thousand hectares",
+        "data": [
+            {
+                "label": "1976",
+                "value": "28.3",
+                "color": "--color-brand"
+            },
+            {
+                "label": "2021",
+                "value": "13.29",
+                "color": "--color-brand"
+            },
+            {
+                "label": "Difference",
+                "value": "-15.01",
+                "color": "--color-red"
+            }
+        ]
+    }
+]

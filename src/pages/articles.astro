@@ -4,7 +4,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import FeaturedArticle from '../components/Article/FeaturedArticle.astro';
 import ArticlePreview from '../components/Article/ArticlePreview.astro';
-import RelatedLink from '../components/RelatedLink.astro';
+import RelatedLinks from '../components/RelatedLinks/RelatedLinks.astro';
 
 let serviceName = "Climate Change";
 
@@ -15,30 +15,6 @@ let permalink = "https://climate-change.data.gov.uk/articles";
 // Data Fetching: List all Markdown posts in the repo.
 let allPosts = await Astro.fetchContent('./articles/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
-
-// Related Links
-const relatedLinks = [
-	{
-		title: "PMD - Publish My Data",
-		href: "",
-		description: "IDS is bringing together data from across the UK government and Devolved Administrations, with the Data Explorer providing new ways to search across and filter datasets to give you the data you need."
-	},
-	{
-		title: "Met Office",
-		href: "",
-		description: "Met Office weather forecasts for the UK. World leading weather services for the public."
-	},
-	{
-		title: "Forestry Research",
-		href: "",
-		description: "Forest Research is Great Britain's principal organisation for forestry and tree related research and is internationally renowned for the provision of evidence..."
-	},
-	{
-		title: "Department for Business, Energy &amp; Industrial Strategy",
-		href: "",
-		description: "Building a stronger, greener future by fighting coronavirus, tackling climate change, unleashing innovation and making the UK a great place to work and do business..."
-	},
-]
 ---
 
 <html lang="en">
@@ -93,10 +69,9 @@ const relatedLinks = [
                             </li>
                         </ul>
                     </section>
-                    <section class="related-links border-top">
-                        <h1 class="heading-m">Related links</h1>
-                        {relatedLinks.map((relatedLink) => <RelatedLink title={relatedLink.title} href={relatedLink.href} description={relatedLink.description} />)}
-                    </section>
+                    
+                    <RelatedLinks />
+
                 </aside>
             </div>
         </div>
