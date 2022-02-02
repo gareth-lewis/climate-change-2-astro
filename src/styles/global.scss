@@ -185,6 +185,16 @@ article p {
     margin-bottom: 24px;
 }
 
+article ul {
+    margin-bottom: 24px;
+    list-style: disc;
+    margin-left: 24px; 
+}
+
+article ul li {
+    margin-bottom: 16px;
+}
+
 .tag {
     font-family: 'GDS Transport Bold', sans-serif;
     background-color: #DBE8F4;

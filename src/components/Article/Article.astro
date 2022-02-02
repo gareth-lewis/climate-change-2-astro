@@ -14,8 +14,6 @@ const { title, summary, publishDate } = Astro.props;
     <article class="content">
         <ArticleHeader title={ title } publishDate={publishDate} summary={summary} />
 
-        <main>
-            <slot />
-        </main>
+        <slot />
     </article>
 </div>

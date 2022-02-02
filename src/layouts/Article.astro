@@ -19,7 +19,9 @@ const serviceName = 'Climate Change';
 
         <Article {title} {summary} {publishDate}>
             <div class="govuk-container">
-                <slot />
+                <main>
+                    <slot />
+                </main>
             </div>
         </Article>
     </body>
