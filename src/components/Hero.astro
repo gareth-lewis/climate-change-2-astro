@@ -3,11 +3,11 @@ export interface Props {
     heading: string;
     description: string;
     callToAction: string;
+    href: string;
     heroImage: string;
-    alt: string;
 }
 
-const { heading, description, callToAction, heroImage, alt } = Astro.props;
+const { heading, description, callToAction, href, heroImage } = Astro.props;
 ---
 
 <section class="page-hero">
@@ -16,7 +16,7 @@ const { heading, description, callToAction, heroImage, alt } = Astro.props;
             <div class="summary">
                 <h1 class="heading-xl">{ heading }</h1>
                 <p>{ description }</p>
-                <button>{ callToAction }</button>
+                <a href={href} class="btn">{ callToAction }</a>
             </div>
             <div class="hero-image" style={"background-image: url(" + heroImage + ")"}></div>
         </div>
@@ -55,7 +55,7 @@ const { heading, description, callToAction, heroImage, alt } = Astro.props;
         margin-bottom: 32px;
     }
 
-    button {
+    .btn {
         font-family: 'GDS Transport Bold', sans-serif;
         font-size: 24px;
         line-height: 24px;
@@ -63,5 +63,6 @@ const { heading, description, callToAction, heroImage, alt } = Astro.props;
         border: 0;
         color: var(--color-brand);
         padding: 8px 16px;
+        text-decoration: none;
     }
 </style>

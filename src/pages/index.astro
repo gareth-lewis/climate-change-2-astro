@@ -18,7 +18,8 @@ let permalink = "https://climate-change.data.gov.uk";
 // Hero content
 let heading = "Measuring greenhouse gas emissions";
 let subheading = "The UK is required to report its estimated greenhouse gas (GHG) emissions on a range of different bases to fulfil a wide range of international agreements as well as for domestic policy making purposes.";
-let callToAction = "Read article";
+let callToAction = "Read the article";
+let href = "/articles/measuring-uk-greenhouse-gas-emissions/"
 
 // Data Fetching: List all Markdown posts in the repo.
 let allPosts = await Astro.fetchContent('./articles/*.md');
@@ -33,7 +34,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 	<body>
 		<Header serviceName={serviceName} alternativeAccent={true} />
 
-		<Hero heading={heading} description={subheading} callToAction={callToAction} heroImage="/images/earth.svg" alt="Image of Earth" />
+		<Hero heading={heading} description={subheading} callToAction={callToAction} href={href} heroImage="/images/earth.svg" />
 
 		<div class="govuk-container">
 			<main>
