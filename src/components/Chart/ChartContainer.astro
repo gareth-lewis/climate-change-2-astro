@@ -1,0 +1,66 @@
+---
+export interface Props {
+    title: string;
+    description: string;
+    source: string[];
+}
+
+const { title, description, source } = Astro.props;
+---
+
+<div class="chart-container">
+    <div class="chart-content">
+        <h1 class="header-m">This is a chart container</h1>
+        <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque, exercitationem delectus officiis harum libero dolore dignissimos nulla repellat rerum a dolores voluptate sit eos ut accusamus porro odio et!</p>
+        <div class="chart"></div>
+    </div>
+    <hr />
+    <div class="source">
+        <p>Source: {source} </p>
+    </div>
+</div>
+
+<style>
+    .chart-container {
+        background-color: var(--color-light-grey);
+        margin-bottom: 40px;
+    }
+
+    .chart-content {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .description {
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--color-secondary-text);
+        margin-bottom: 24px;
+    }
+
+    .chart {
+        border: 1px dashed var(--color-border);
+        border-radius: 16px;
+        height: 256px;
+    }
+
+    hr {
+        border: 0;
+        border-bottom: 1px solid var(--color-border);
+        margin: 0;
+    }
+
+    .source {
+        padding: 16px 24px;
+    }
+
+    .source p {
+        font-size: 16px;
+        margin: 0;
+    }
+</style>

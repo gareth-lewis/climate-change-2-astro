@@ -1,6 +1,7 @@
 ---
 setup: |
-    import Layout from '../../layouts/Article.astro'
+    import Layout from '../../layouts/Article.astro';
+    import ChartContainer from '../../components/Chart/ChartContainer.astro';
 title: "Measuring UK greenhouse gas emissions"
 publishDate: 01 Nov 2021
 name: Gareth Lewis
@@ -37,7 +38,11 @@ They currently exclude emissions or removals from:
 
 In 2020 on a provisional basis and following the early impacts of the coronavirus pandemic, UK emissions were 414 million tonnes of carbon dioxide equivalent, or Mt CO2e — a measure covering the seven main GHGs3, weighting each gas based on its potential to cause global warming. As CO2 accounts for the majority of emissions (80% on average over the years 2016 to 2020), changes in CO2 tend to be reflected in changes in GHG emissions overall. Total emissions were down 49% compared with 809 Mt CO2e in 1990 (Figure 1).
 
+<ChartContainer />
+
 Emissions tend to vary depending on average temperatures and weather conditions: for example, cold periods lead to more household heating. Temperature adjusted UK emissions have tended to track unadjusted emissions in recent years (Figure 2). More information is available here.
+
+<ChartContainer />
 
 ## Emissions estimates comparable with economic data
 
@@ -51,6 +56,8 @@ A key use of this measure is that it enables direct comparison of emissions by s
 
 In 2020, the industries contributing the most emissions were similar to previous years: energy supply, manufacturing and transport (Figure 3). Household emissions, from heating homes and travelling, for commuting, social, domestic or leisure purposes, has been the largest contributor since 2015. These three industries and households together accounted for 70% of emissions in 2020.
 
+<ChartContainer />
+
 The reductions in GHG emissions seen from 1990 to 2020 (on both a territorial and residence basis) were driven largely by a switch from using coal and heavy-emitting fuels in the energy supply and manufacturing industries to lower emission fuels such as natural gas and, more recently, renewable sources.
 
 When used for electricity generation, coal produces more carbon dioxide (CO2) than natural gas per unit of electricity produced, hence the reduction in CO2 emissions from the switch away from coal.
@@ -60,6 +67,8 @@ More detailed breakdowns are currently only available up to 2019. From 1990 to 2
 These four sectors accounted for 82% of all fossil fuel energy use in the UK in 2019. Agriculture accounted for 1% of fossil fuel energy use in the UK in 2019 but 9% of GHG emissions (residence basis). Emissions from agriculture are dominated by non-CO2 emissions such as Methane (CH4), mainly from enteric fermentation, which occurs in the digestive system of ruminant animals or Nitrous oxide (N2O) which largely arises from the use of nitrogen fertiliser.
 
 More information on energy use (from fossil fuels and renewables) and energy intensity in the UK can be found in the article The UK’s climate is changing. What is driving this? How is the UK responding?
+
+<ChartContainer />
 
 The provisional 2020 figures enable us to look at the emissions impacts of the early part of the coronavirus pandemic. The transport industry recorded the biggest proportional fall in emissions across industries, down 40% from 2019 to 2020, compared with a 9% fall in the previous year.
 
@@ -80,6 +89,8 @@ UK footprint emissions in 2018, the latest available year, were 703Mt CO2e4.
 In 2018, the latest year that all three measures are available, territorial emissions were 468 Mt CO2e, residence emissions 569 Mt CO2e and footprint emissions 703 Mt CO2e.
 
 Figure 5 below shows how these three UK emissions measures compare over time. The territorial and residence measures have broadly moved downwards together, while footprint emissions have fallen since the mid-2000s.
+
+<ChartContainer />
 
 The UK works continually to improve its emission statistics which will be regularly updated.
 
