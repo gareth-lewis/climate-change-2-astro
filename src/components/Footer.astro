@@ -1,0 +1,81 @@
+---
+
+---
+
+<footer>
+    <div class="govuk-container">
+        <div class="footer-layout">
+            <div class="footer-content">
+                <p>Powered by the Integrated Data Service (IDS).</p>
+                <p><a href="/cookies">Cookies</a></p>
+                <p><img src="/images/ogl.svg" alt="OGL logo" class="ogl-logo" />All content is available under the <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>, except where otherwise stated</p>
+            </div>
+            <div class="crown">
+                <a href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
+                    <img src="/images/crown.png" alt="Crown logo" />
+                    <span>&copy; Crown copyright</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+    footer {
+        background: var(--color-light-grey);
+        border-top: 1px solid var(--color-border);
+        padding: 40px 0;
+        font-size: 16px;
+        margin-top: 56px;
+    }
+
+    .footer-content {
+        align-self: end;
+    }
+
+    .footer-content p {
+        margin-bottom: 16px;
+    }
+
+    .footer-content p:last-child {
+        margin: 0;
+    }
+
+    .footer-content a {
+        color: var(--text-color);
+    }
+
+    .ogl-logo {
+        height: 16px;
+        position: relative;
+        top: 2px;
+        margin-right: 8px;
+    }
+
+    .footer-layout {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto 168px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .footer-layout {
+            grid-template-columns: auto;
+            gap: 40px;
+        }
+    }
+
+    .crown {
+        justify-self: center;
+    }
+
+    .crown a {
+        display: block;
+        text-align: center;
+    }
+
+    span {
+        display: block;
+        color: var(--color-text);
+    }
+</style>

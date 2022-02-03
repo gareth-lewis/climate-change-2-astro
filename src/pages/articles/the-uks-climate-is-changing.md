@@ -4,10 +4,9 @@ setup: |
     import ChartContainer from '../../components/Chart/ChartContainer.astro';
 title: "The UK’s climate is changing. What is driving this? How is the UK responding?"
 publishDate: 01 Nov 2021
-name: Gareth Lewis
-summary: >
+summary: |
     The latest report from the Intergovernmental Panel on Climate Change (IPCC), a United Nations body providing science-led comprehensive assessments of climate change science, found that climate change is already happening, with global surface temperatures between 2001 and 2020 around 1°C higher than during 1850 to 1900, and that this is having effects across the world and in the UK including making extreme weather events more likely.
-description: >
+description: |
     The latest report from the Intergovernmental Panel on Climate Change (IPCC), a United Nations body providing science-led comprehensive assessments of climate change science, found that climate change is already happening, with global surface temperatures between 2001 and 2020 around 1°C higher than during 1850 to 1900, and that this is having effects across the world and in the UK including making extreme weather events more likely.
 
     The report found unequivocal evidence that observed warming of the climate is a consequence of emissions from human activity that has increased the concentration of greenhouse gases in the global atmosphere. Human induced climate change has already affected the severity and frequency of many types of extreme weather and climate events.

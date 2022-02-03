@@ -4,10 +4,9 @@ setup: |
     import ChartContainer from '../../components/Chart/ChartContainer.astro';
 title: "Measuring UK greenhouse gas emissions"
 publishDate: 01 Nov 2021
-name: Gareth Lewis
-summary: >
+summary: |
     The UK is required to report its estimated greenhouse gas (GHG) emissions on a range of different bases (territorial, residence and footprint) to fulfil a wide range of international agreements as well as for domestic policy making purposes. The three key official measures of UK GHG emissions, territorial, residence and footprint, are explored and defined below.
-description: >
+description: |
     The UK is required to report its estimated greenhouse gas (GHG) emissions on a range of different bases (territorial, residence and footprint) to fulfil a wide range of international agreements as well as for domestic policy making purposes. The three key official measures of UK GHG emissions, territorial, residence and footprint, are explored and defined below.
 
     One of these, territorial, is used to inform progress on UK-wide emissions targets. These include a target of net zero for UK greenhouse gas (GHG) emissions by 2050 compared with 1990 levels, adopted by the UK Government in 2019 following a Committee on Climate Change recommendation. More recently, UK government announced the sixth Carbon Budget target to reduce emissions by approximately 78% by 2035 compared with 1990 levels.

@@ -4,10 +4,9 @@ setup: |
     import ChartContainer from '../../components/Chart/ChartContainer.astro';
 title: "UK greenhouse gas emissions associated with international trade"
 publishDate: 01 Nov 2021
-name: Gareth Lewis
-summary: >
+summary: |
     Providing services — including financial, legal and communications services — tends to emit fewer greenhouse gas emissions than manufacturing goods such as petroleum products, iron, steel or concrete.
-description: >
+description: |
     Providing services — including financial, legal and communications services — tends to emit fewer greenhouse gas emissions than manufacturing goods such as petroleum products, iron, steel or concrete.
 
     A structural shift in the UK economy from manufacturing to services over the decades has therefore likely contributed to the fall in key measures of UK greenhouse gas emissions across this period. More detail on emissions intensity of different industries can be found here.

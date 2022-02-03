@@ -1,6 +1,7 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import Article from '../components/Article/Article.astro';
 
 const { content } = Astro.props;
@@ -24,5 +25,7 @@ const serviceName = 'Climate Change';
                 </main>
             </div>
         </Article>
+
+        <Footer />
     </body>
 </html>
