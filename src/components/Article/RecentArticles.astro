@@ -1,0 +1,39 @@
+---
+import SecondaryInformation from '../SecondaryInformation.astro';
+---
+
+<SecondaryInformation title="Recent articles">
+    <ul>
+        <li>
+            <p>1 November 2021</p>
+            <a href="#">Measuring greenhouse gas emissions</a>
+        </li>
+        <li>
+            <p>1 November 2021</p>
+            <a href="#">Emissions embedded in trade and impacts on climate change</a>
+        </li>
+    </ul>
+</SecondaryInformation>
+
+<style>
+    ul {
+        list-style: none;
+        margin: 0;
+    }
+
+    ul li {
+        margin-bottom: 32px;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: 'GDS Transport Bold', sans-serif;
+        font-weight: 700;
+    }
+
+    p {
+        font-size: 16px;
+        color: var(--color-secondary-text);
+        margin: 0;
+    }
+</style>

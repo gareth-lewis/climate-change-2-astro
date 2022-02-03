@@ -30,10 +30,10 @@ These estimates include emissions produced within the UK’s geographical border
 * land, including forests and crop or grazing land.
 
 They currently exclude emissions or removals from:
-* international aviation and shipping;1
+* international aviation and shipping;[^1]
 * UK residents and UK registered businesses abroad; and
 * production of goods and services the UK imports from other countries;
-* burning biomass – wood, straw, biogases and poultry litter – for energy production.2
+* burning biomass – wood, straw, biogases and poultry litter – for energy production.[^2]
 
 In 2020 on a provisional basis and following the early impacts of the coronavirus pandemic, UK emissions were 414 million tonnes of carbon dioxide equivalent, or Mt CO2e — a measure covering the seven main GHGs3, weighting each gas based on its potential to cause global warming. As CO2 accounts for the majority of emissions (80% on average over the years 2016 to 2020), changes in CO2 tend to be reflected in changes in GHG emissions overall. Total emissions were down 49% compared with 809 Mt CO2e in 1990 (Figure 1).
 
@@ -94,3 +94,8 @@ Figure 5 below shows how these three UK emissions measures compare over time. Th
 The UK works continually to improve its emission statistics which will be regularly updated.
 
 Contact details for this article: climate.change@ons.gov.uk
+
+---
+
+[^1]: Emissions from International aviation and shipping will be included within the UK-wide net zero target and carbon budgets from 2033.
+[^2]: The net zero target under the Climate Change Act follows international guidelines such that carbon dioxide emissions from biomass combustion are reported as changes in carbon stocks in the Land-Use, Land-Use Change and Forestry (LULUCF) sector of the country where biomass is harvested. So while UK emissions are reported as a memorandum item by the sector where the biomass fuel is used, they are not included in UK emissions to avoid double-counting. Emissions of GHGs other than carbon dioxide are included.

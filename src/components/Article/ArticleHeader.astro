@@ -1,5 +1,6 @@
 ---
 import ContentUpdates from '../ContentUpdates.astro';
+import RecentArticles from '../Article/RecentArticles.astro';
 
 export interface Props {
     title: string;
@@ -19,7 +20,7 @@ const { title, publishDate, summary } = Astro.props;
                 <p class="summary">{ summary }</p>
             </div>
             <div>
-                <ContentUpdates />
+                <RecentArticles />
             </div>
         </div>
     </div>

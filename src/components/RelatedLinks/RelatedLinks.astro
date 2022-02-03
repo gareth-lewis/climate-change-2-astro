@@ -1,20 +1,15 @@
 ---
 import RelatedLinks from '../../data/relatedLinks.json';
 import RelatedLink from '../RelatedLinks/RelatedLink.astro';
+import SecondaryInformation from '../SecondaryInformation.astro';
 ---
 
-<section>
-    <h1 class="heading-m">Related links</h1>
-    {RelatedLinks.map((relatedLink) => <RelatedLink title={relatedLink.title} href={relatedLink.href} description={relatedLink.description} />)}
-</section>
+<SecondaryInformation title="Related Links">
+  {RelatedLinks.map((relatedLink) => <RelatedLink title={relatedLink.title} href={relatedLink.href} description={relatedLink.description} />)}
+</SecondaryInformation>
 
 <style>
-    h1 {
+  h1 {
 		margin-bottom: 24px;
 	}
-
-  section {
-		border-top: 4px solid var(--color-brand);
-		padding-top: 16px;
-  }
 </style>
