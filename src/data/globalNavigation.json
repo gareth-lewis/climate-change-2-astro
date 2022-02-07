@@ -1,0 +1,43 @@
+[
+    {
+        "navigation-item": "Dashboards",
+        "expandable": true,
+        "description": "View insights into climate change topics",
+        "sub-navigation": [
+            {
+                "label": "Climate &amp; weather",
+                "href": "/dashboards/climate-and-weather/"
+            },
+            {
+                "label": "Emissions",
+                "href": "/dashboards/emissions/"
+            },
+            {
+                "label": "Drivers",
+                "href": "/dashboards/drivers/"
+            },
+            {
+                "label": "Impacts",
+                "href": "/dashboards/impacts/"
+            },
+            {
+                "label": "Mitigation",
+                "href": "/dashboards/mitigation/"
+            },
+            {
+                "label": "Adaptation",
+                "href": "/dashboards/adaptation/"
+            }
+        ]
+    },
+    {
+        "navigation-item": "Articles",
+        "href": "/articles/",
+        "expandable": false
+    },
+    {
+        "navigation-item": "About",
+        "href": "/about/",
+        "expandable": false
+    }
+]

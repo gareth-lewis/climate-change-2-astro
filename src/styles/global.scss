@@ -157,41 +157,47 @@ a {
     }
 }
 
-article h1 {
+.article-content h1 {
     font-size: 48px;
     line-height: 56px;
     margin-bottom: 40px;
+    width: 66.67%;
 }
 
-article h2 {
+.article-content h2 {
     font-size: 32px;
     line-height: 40px;
     margin-bottom: 32px;
+    width: 66.67%;
 }
 
-article h3 {
+.article-content h3 {
     font-size: 24px;
     line-height: 32px;
     margin-bottom: 24px;
+    width: 66.67%;
 }
 
-article h4 {
+.article-content h4 {
     font-size: 19px;
     line-height: 24px;
     margin-bottom: 16px;
+    width: 66.67%;
 }
 
-article p {
+.article-content p {
     margin-bottom: 24px;
+    width: 66.67%;
 }
 
-article ul {
+.article-content ul {
     margin-bottom: 24px;
     list-style: disc;
     margin-left: 24px; 
+    width: 66.67%;
 }
 
-article ul li {
+.article-content ul li {
     margin-bottom: 16px;
 }
 

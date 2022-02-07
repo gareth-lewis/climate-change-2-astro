@@ -1,6 +1,6 @@
 {
-  "name": "@example/minimal",
-  "version": "0.0.1",
+  "name": "climate-change",
+  "version": "2.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev",

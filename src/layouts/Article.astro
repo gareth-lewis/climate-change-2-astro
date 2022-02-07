@@ -20,7 +20,7 @@ const serviceName = 'Climate Change';
 
         <Article {title} {summary} {publishDate}>
             <div class="govuk-container">
-                <main>
+                <main class="article-content">
                     <slot />
                 </main>
             </div>
@@ -29,9 +29,3 @@ const serviceName = 'Climate Change';
         <Footer />
     </body>
 </html>
-
-<style>
-    main {
-        width: 66.67%;
-    }
-</style>

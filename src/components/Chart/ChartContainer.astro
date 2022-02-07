@@ -2,7 +2,7 @@
 export interface Props {
     title: string;
     description: string;
-    source: string[];
+    source: string;
 }
 
 const { title, description, source } = Astro.props;
@@ -10,13 +10,13 @@ const { title, description, source } = Astro.props;
 
 <div class="chart-container">
     <div class="chart-content">
-        <h1 class="header-m">This is a chart container</h1>
+        <h1 class="header-m">{ title }</h1>
         <p class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem itaque, exercitationem delectus officiis harum libero dolore dignissimos nulla repellat rerum a dolores voluptate sit eos ut accusamus porro odio et!</p>
         <div class="chart"></div>
     </div>
     <hr />
     <div class="source">
-        <p>Source: {source} </p>
+        <p>Source: { source }</p>
     </div>
 </div>
 
@@ -30,7 +30,7 @@ const { title, description, source } = Astro.props;
         padding: 24px;
     }
 
-    h1 {
+    .chart-content h1 {
         font-size: 24px;
         line-height: 32px;
         margin-bottom: 16px;
