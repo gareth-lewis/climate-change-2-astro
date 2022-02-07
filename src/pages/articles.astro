@@ -19,19 +19,6 @@ const breadcrumbs = [{ "name": "Home", "href": "/" }];
 // Data Fetching: List all Markdown posts in the repo.
 let allPosts = await Astro.fetchContent('./articles/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
-
-// export async function getStaticPaths({rss}) {
-//     rss({
-//         title: serviceName,
-//         description: description,
-//         items: allPosts.map(item => ({
-//             title: item.title,
-//             description: item.description,
-//             link: item.permalink,
-//             pubDate: item.publishDate
-//         }))
-//     });
-// }
 ---
 
 <html lang="en">
