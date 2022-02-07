@@ -4,6 +4,7 @@ setup: |
     import ChartContainer from '../../components/Chart/ChartContainer.astro';
 title: "UK greenhouse gas emissions associated with international trade"
 publishDate: 01 Nov 2021
+permalink: https://climate-change.data.gov.uk/articles/uk-greenhouse-gas-emissions-associated-with-international-trade
 summary: |
     Providing services — including financial, legal and communications services — tends to emit fewer greenhouse gas emissions than manufacturing goods such as petroleum products, iron, steel or concrete.
 description: |
