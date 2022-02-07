@@ -1,5 +1,5 @@
 ---
-import ContentUpdates from '../ContentUpdates.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
 import RecentArticles from '../Article/RecentArticles.astro';
 
 export interface Props {
@@ -9,10 +9,23 @@ export interface Props {
 }
 
 const { title, publishDate, summary } = Astro.props;
+
+const breadcrumbs = [
+    {
+        "name": "Home",
+        "href": "/"
+    },
+    {
+        "name": "Articles",
+        "href": "/articles/"
+    }
+]
 ---
 
 <header>
     <div class="govuk-container">
+        <Breadcrumbs breadcrumbs={ breadcrumbs } />
+
         <div class="header-content">
             <div class="article-summary">
                 <h1 class="heading-xl">{ title }</h1>

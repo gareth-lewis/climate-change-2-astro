@@ -1,5 +1,6 @@
 ---
 import ArticleHeader from '../Article/ArticleHeader.astro';
+import Breadcrumbs from '../Breadcrumbs.astro';
 
 export interface Props {
     title: string;
@@ -8,9 +9,12 @@ export interface Props {
 }
 
 const { title, summary, publishDate } = Astro.props;
+
+
 ---
 
 <div class="layout">
+
     <article class="content">
         <ArticleHeader title={ title } publishDate={publishDate} summary={summary} />
 

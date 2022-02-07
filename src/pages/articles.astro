@@ -2,8 +2,8 @@
 // Component Imports
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FeaturedArticle from '../components/Article/FeaturedArticle.astro';
-import SecondaryInformation from '../components/SecondaryInformation.astro';
 import ArticlePreview from '../components/Article/ArticlePreview.astro';
 import ContentUpdates from '../components/ContentUpdates.astro';
 import RelatedLinks from '../components/RelatedLinks/RelatedLinks.astro';
@@ -13,6 +13,8 @@ let serviceName = "Climate Change";
 let title = "Articles"
 let description = "See a list of articles related to Climate Change"
 let permalink = "https://climate-change.data.gov.uk/articles";
+
+const breadcrumbs = [{ "name": "Home", "href": "/" }];
 
 // Data Fetching: List all Markdown posts in the repo.
 let allPosts = await Astro.fetchContent('./articles/*.md');
@@ -29,6 +31,8 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 
         <section class="featured-article">
             <div class="govuk-container">
+                <Breadcrumbs breadcrumbs={ breadcrumbs } />
+
                 <h1 class="heading-xl">Articles</h1>
 
                 <!-- Make the latest article featured -->
