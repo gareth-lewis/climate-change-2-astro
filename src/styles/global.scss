@@ -225,8 +225,9 @@ a {
 .article-content ul {
     margin-bottom: 24px;
     list-style: disc;
-    margin-left: 24px; 
+    padding-left: 24px; 
     width: 66.67%;
+    box-sizing: border-box;
 }
 
 .article-content ul li {
