@@ -118,6 +118,12 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 16px;
+    }
+}
+
 .govuk-container {
     max-width: 1280px;
     margin: 0 auto;
@@ -137,21 +143,41 @@ h1, h2, h3, h4, h5, h6 {
     &.heading-xl {
         font-size: 48px;
         line-height: 48px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 32px;
+            line-height: 40px;
+        }
     }
 
     &.heading-l {
         font-size: 32px;
         line-height: 40px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 24px;
+            line-height: 32px;
+        }
     }
 
     &.heading-m {
         font-size: 24px;
         line-height: 32px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 19px;
+            line-height: 24px;
+        }
     }
 
     &.heading-s {
         font-size: 19px;
         line-height: 24px;
+
+        @media screen and (max-width: 768px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 }
 
