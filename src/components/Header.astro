@@ -116,7 +116,7 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
     });
 
     document.getElementById('open-mobile-menu').addEventListener('click', event => {
-        event.target.classList.toggle("open");
+        event.target.parentElement.classList.toggle("open");
         document.getElementById('mobile-nav').classList.toggle("hidden");
     });
 
@@ -388,7 +388,7 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
 
     @media screen and (max-width: 768px) {    
         .header-nav ul li a {
-            padding: 10px 0 10px 16px;
+            padding: 10px 16px;
         }
     }
 
