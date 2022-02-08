@@ -124,6 +124,12 @@ body {
     padding: 0 32px;
 }
 
+@media screen and (max-width: 768px) {
+    .govuk-container {
+        padding: 0 16px;
+    }
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'GDS Transport Bold', sans-serif;
     font-weight: 700;
