@@ -68,6 +68,18 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 		gap: 16px;
 	}
 
+	@media screen and (max-width: 1024px) {
+		.overview {
+			grid-template-columns: 1fr 1fr;
+		}
+	}
+
+	@media screen and (max-width: 640px) {
+		.overview {
+			grid-template-columns: 1fr;
+		}
+	}
+
 	main {
 		margin-top: -48px;
 	}
@@ -76,7 +88,17 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 		display: grid;
 		grid-template-columns: 2fr 1fr;
 		gap: 48px;
-	} 
+	}
+
+	@media screen and (max-width: 768px) {
+		.content {
+			display: block;
+		}
+	}
+
+	.articles {
+		margin-bottom: 56px;
+	}
 
 	.articles h1 {
 		margin-bottom: 24px;

@@ -32,7 +32,7 @@ const breadcrumbs = [
                 <!-- <p>{ publishDate }</p> -->
                 <p class="summary">{ summary }</p>
             </div>
-            <div>
+            <div class="recent-articles">
                 <RecentArticles />
             </div>
         </div>
@@ -52,6 +52,12 @@ const breadcrumbs = [
         gap: 48px;
     }
 
+    @media screen and (max-width: 768px) {
+        .header-content {
+            display: block;
+        }
+    }
+
     h1 {
         margin-bottom: 32px;
     }
@@ -60,5 +66,11 @@ const breadcrumbs = [
         font-size: 24px;
         line-height: 32px;
         margin: 0;
+    }
+
+    @media screen and (max-width: 768px) {
+        .recent-articles {
+            display: none;
+        }
     }
 </style>

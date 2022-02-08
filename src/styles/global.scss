@@ -201,6 +201,18 @@ a {
     margin-bottom: 16px;
 }
 
+@media screen and (max-width: 768px) {
+    .article-content h1,
+    .article-content h2,
+    .article-content h3,
+    .article-content h4,
+    .article-content p,
+    .article-content ul,
+    .article-content ul li {
+        width: 100%;
+    }
+}
+
 ol {
     list-style-type: decimal; 
     list-style-position: inside;

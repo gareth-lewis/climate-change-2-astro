@@ -33,7 +33,7 @@ The UK’s warming has been broadly consistent, though slightly higher, than the
 
 While all the top 10 warmest years since 1884 have occurred this century (Figure 1), all of the top 10 coldest years occurred before the 21st century. The UK’s coldest year this century was 2010, which was the 22nd coldest since 1884.
 
-<ChartContainer />
+<ChartContainer title="Figure 1: Annual mean temperature (°C) for the UK, 1884 to 2020" />
 
 ### Rainfall
 
@@ -41,7 +41,7 @@ The decade from 2011 to 2020 was on average 4% wetter than the period 1981 to 20
 
 Six of the UK’s ten wettest years in a series going back to 1862 have occurred since 1998: in order of the wettest these were 2000, 2020, 2012, 1998, 2008 and 2014 (Figure 2). For the decade 2011 to 2020, UK summers have been on average 17% wetter than 1961 to 1990 and the UK winters have been 19% wetter. The wettest ever months of February, April, June, November and December on record in the UK have all been since 2009, in a series going back to 1862.
 
-<ChartContainer />
+<ChartContainer title="Figure 2: Mean annual rainfall (mm) UK, 1862 to 2020" />
 
 ### Growing season
 
@@ -49,13 +49,13 @@ The thermal growing season is based on temperature, rather than other factors af
 
 The UK’s warming climate has seen the average growing season length increase (Figure 3). The average growing season in the decade 2011 to 2020 was 29 days longer than the 1961 to 1990 average.
 
-<ChartContainer />
+<ChartContainer title="Figure 3: UK growing season length in days, 1960 to 2020" />
 
 ### Greenhouse gas emissions
 
 There are three main measures of UK emissions of greenhouse gases: territorial, residence, and footprint also known as consumption. In 2018, the latest year with figures for all three measures, total emissions ranged from 468 million tonnes of carbon dioxide (CO2) equivalent on a territorial basis to 703 million tonnes of CO2 equivalent on a consumption basis (Figure 4). For more information on different UK greenhouse gas emissions measures, see Measuring greenhouse gas emissions.
 
-<ChartContainer />
+<ChartContainer figure="Figure 4: Greenhouse gas emissions on a territorial, residence and carbon footprint basis: UK, 1990 to 2019 and provisional 2020 (million tonnes of carbon dioxide equivalent)" />
 
 ## Mitigation
 
@@ -67,7 +67,7 @@ Primary energy demand is the energy the UK needs for consumption and for operati
 
 The UK’s energy mix has shifted away from the use of coal (Figure 5). Coal met 16% of energy demand whilst renewables met only 1% in 2000, and by 2020 coal was meeting 3% and renewable energy 16%, mainly through bioenergy and wind. Fossil fuels remain important, including oil for transport and gas for energy generation and heating.
 
-<ChartContainer />
+<ChartContainer title="Figure 5: Primary energy demand, UK, 1995 to 2020, (million tonnes of oil equivalent)" />
 
 ### Energy intensity
 
@@ -75,11 +75,11 @@ Energy intensity is a measure of how much activity is achieved with a given amou
 
 Since 2000, there have been efficiency improvements in road passenger transport with the energy required per passenger kilometre travelled falling 7.6% between 2000 and 2018, reflecting the better fuel economy of cars. Household and service efficiency has also improved over the last twenty years (Figure 6), driven by increasingly efficient space heating (for example, new combi boilers are significantly more efficient than older ones), greater insulation in homes and businesses, and a wholesale change in lighting efficiencies.
 
-<ChartContainer />
+<ChartContainer title="Figure 6: Energy intensity indices relative to the year 2000, UK, 2000 to 2020" />
 
 Primary Energy Consumption is the amount of fuel used before any loss of energy occurs through conversion or transformation. The Primary energy equivalent includes fuel use after accounting for any losses incurred during the energy transformation process, such as electricity generation and oil refining. Primary energy intensity is calculated by dividing primary energy consumption by Gross Domestic Product (GDP). Primary energy consumption declined 30% between 2000 and 2020, leading to a drop in primary energy intensity of over 43% (Figure 7), while UK GDP grew 24% over the same period.
 
-<ChartContainer />
+<ChartContainer title="Figure 7: Primary energy intensity (temperature adjusted), UK, 2000 to 2020" />
 
 ## Adaptation
 
@@ -99,17 +99,17 @@ Benefits from individual trees and green spaces in urban areas include urban coo
 
 The land area of the UK covered by woodland increased from 9% in 1980 to 13% in 2021 (Figure 8). Over 13,000 hectares of new woodland were created in the UK in the year to March 2021. Woodland is defined in these statistics as areas of 0.5 hectares or over, a width of greater than 20 metres and with a canopy cover of at least 20% (or having the potential to achieve this).
 
-<ChartContainer />
+<ChartContainer title="Figure 8: Area of woodland in the UK, million hectares, 1998 to 2021" />
 
 Woodland cover varies by UK nation, from 19% of Scotland, 15% of Wales, 10% of England and 9% of Northern Ireland. Shares of woodland area also vary considerably at local level. Figure 9 shows the percentage of woodland by Local Authority in 2019. Neath Port Talbot has the highest estimated woodland cover at 39%. Some of the areas with very low woodland cover - Orkney Island (0.2%) and Fenland district in Cambridgeshire (0.5%) - both have peatlands, which are a significant carbon store like trees. Peatland and heathland, sites with rare or protected species and archaeological sites are all areas unsuitable for woodland planting.
 
-<ChartContainer />
+<ChartContainer title="Figure 9: Woodland area by UK Local Authority, 2019" />
 
 As at March 2021, 51% of UK woodland was conifers (species such as spruce, pine and larch) and 49% broadleaf (species such as oak, birch and beech) (Figure 10) .
 
 Over the last 45 years, the type of new trees planted has changed. In the mid-1980s, around 5% of new woodland creation was broadleaf, rising to more than 80% between 2005 and 2010. In the last five years (2017 to 2021), 40-45% of new woodland planting was broadleaf. New woodland refers to areas of land that were not previously woodland.
 
-<ChartContainer />
+<ChartContainer title="Figure 10: New planting of UK woodlands, thousand hectares, 1976 to 2021" />
 
 ### Water resources
 
@@ -119,11 +119,11 @@ A key water system leakage measure is a 3-year average, with sensitivity to peri
 
 Each of the four UK nations has shown a steady decrease in water lost through leakage (Figure 11). Scotland has reduced this by 52% between the 3 years ending 2007-08 and the 3 years ending 2019-20, and Wales by 23%, England by 9% and Northern Ireland by 3% over the same period.
 
-<ChartContainer />
+<ChartContainer title="Figure 11: UK water leakage, average megalitres per day, 2002-03 to 2019-20" />
 
 Water consumption per capita in England has also fallen from an average of 152 litres per person per day in the 3 years to 2003-04 to an average of 141 litres per person per day in the 3 years to 2019-20 (Figure 12).
 
-<ChartContainer />
+<ChartContainer title="Figure 12: Per capita water consumption in England, 2001 to 2020" />
 
 ### Energy efficiency in homes
 
@@ -131,10 +131,10 @@ Energy Performance Certificates (EPCs) give homes an energy efficiency rating fr
 
 In 2020, only 3% of new EPCs recorded for existing homes in 2020 were in the two most energy efficient ratings, ‘A’ or ‘B’ (Figure 13). The middle rating (‘D’) accounted for 42% of the total in that year.
 
-<ChartContainer />
+<ChartContainer title="Figure 13: Number of records added to register for existing homes energy efficiency rating, 2009 to 2020, England and Wales" />
 
 By contrast, 89% of new buildings in 2020 were rated ‘A’ or ‘B’ (Figure 14).
 
-<ChartContainer />
+<ChartContainer title="Figure 14: Number of records added to register for new homes energy efficiency rating, 2009 to 2020, England and Wales—Energy efficiency of domestic buildings" />
 
 Contact details for this article: climate.change@ons.gov.uk

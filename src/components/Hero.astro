@@ -36,6 +36,12 @@ const { heading, description, callToAction, href, heroImage } = Astro.props;
         gap: 48px;
     }
 
+    @media screen and (max-width: 768px) {
+        .hero-content {
+            display: block;
+        }
+    }
+
     .summary {
         padding: 56px 0 96px;
     }
@@ -43,6 +49,12 @@ const { heading, description, callToAction, href, heroImage } = Astro.props;
     .hero-image {
         background-size: cover;
         background-position: center center;
+    }
+
+    @media screen and (max-width: 768px) {
+        .hero-image {
+            display: none;
+        }
     }
 
     h1 {

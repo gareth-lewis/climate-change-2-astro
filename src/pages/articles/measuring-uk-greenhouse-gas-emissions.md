@@ -36,7 +36,7 @@ They currently exclude emissions or removals from:
 * production of goods and services the UK imports from other countries;
 * burning biomass – wood, straw, biogases and poultry litter – for energy production.[^2]
 
-In 2020 on a provisional basis and following the early impacts of the coronavirus pandemic, UK emissions were 414 million tonnes of carbon dioxide equivalent, or Mt CO2e — a measure covering the seven main GHGs3, weighting each gas based on its potential to cause global warming. As CO<sub>2</sub> accounts for the majority of emissions (80% on average over the years 2016 to 2020), changes in CO<sub>2</sub> tend to be reflected in changes in GHG emissions overall. Total emissions were down 49% compared with 809 Mt CO<sub>2</sub>e in 1990 (Figure 1).
+In 2020 on a provisional basis and following the early impacts of the coronavirus pandemic, UK emissions were 414 million tonnes of carbon dioxide equivalent, or Mt CO2e — a measure covering the seven main GHGs3, weighting each gas based on its potential to cause global warming. As CO2 accounts for the majority of emissions (80% on average over the years 2016 to 2020), changes in CO2 tend to be reflected in changes in GHG emissions overall. Total emissions were down 49% compared with 809 Mt CO2e in 1990 (Figure 1).
 
 <ChartContainer 
     title="Figure 1: Net greenhouse gas emissions on a territorial basis were down 49% in 2020 compared with 1990 levels"
@@ -54,7 +54,7 @@ Emissions estimates are also available on a UK residence basis. These cover emis
 
 The Office for National Statistics produces these as part of the UK’s Environmental Accounts. These estimates provide additional useful information to complement the UK’s national accounts.
 
-Total provisional GHG emissions in 2020 on a residence basis were 480 million tonnes of carbon dioxide equivalent (Mt CO<sub>2</sub>e), slightly higher than on the territorial measure. This difference is mainly due to the Environmental Accounts measure of emissions including emissions from international travel and emissions from burning biomass2.
+Total provisional GHG emissions in 2020 on a residence basis were 480 million tonnes of carbon dioxide equivalent (Mt CO2e), slightly higher than on the territorial measure. This difference is mainly due to the Environmental Accounts measure of emissions including emissions from international travel and emissions from burning biomass2.
 
 A key use of this measure is that it enables direct comparison of emissions by sector of UK industry and households with key economic indicators including gross domestic product (GDP) and Gross Value Added (GVA).
 

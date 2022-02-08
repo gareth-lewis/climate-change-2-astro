@@ -2,6 +2,7 @@
 // Component Imports
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
 import Breadcrumbs from '../components/Breadcrumbs.astro';
 import FeaturedArticle from '../components/Article/FeaturedArticle.astro';
 import ArticlePreview from '../components/Article/ArticlePreview.astro';
@@ -54,6 +55,8 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
                 </aside>
             </div>
         </div>
+
+        <Footer />
 	</body>
 </html>
 
@@ -68,6 +71,12 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 48px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .layout {
+            display: block;
+        }
     }
 
     .featured-article h1 {
