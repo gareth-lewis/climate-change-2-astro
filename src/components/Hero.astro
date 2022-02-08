@@ -45,6 +45,12 @@ const { heading, description, callToAction, href, heroImage } = Astro.props;
         padding: 56px 0 96px;
     }
 
+    @media screen and (max-width: 768px) {
+        .summary {
+            padding: 32px 0 96px;
+        }
+    }
+
     .hero-image {
         background-size: cover;
         background-position: center center;
