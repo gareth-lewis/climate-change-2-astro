@@ -386,6 +386,12 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
         position: relative;
     }
 
+    @media screen and (max-width: 768px) {    
+        .header-nav ul li a {
+            padding: 10px 16px;
+        }
+    }
+
     .header-nav ul li a:hover::after {
         content: '';
         height: 4px;
