@@ -67,6 +67,13 @@ const { heading, description, callToAction, href, heroImage } = Astro.props;
         margin-bottom: 32px;
     }
 
+    @media screen and (max-width: 768px) {
+        .p {
+            font-size: 19px;
+            line-height: 24px;
+        }
+    }
+
     .btn {
         font-family: 'GDS Transport Bold', sans-serif;
         font-size: 24px;
@@ -76,5 +83,12 @@ const { heading, description, callToAction, href, heroImage } = Astro.props;
         color: var(--color-brand);
         padding: 8px 16px;
         text-decoration: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .btn {
+            font-size: 19px;
+            line-height: 24px;
+        }
     }
 </style>
