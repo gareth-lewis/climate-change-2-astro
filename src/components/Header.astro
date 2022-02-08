@@ -1,4 +1,6 @@
 ---
+import globalNavigation from '../data/globalNavigation.json';
+
 export interface Props {
     serviceName: string;
     alternativeAccent: boolean;
@@ -22,9 +24,18 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
 
         <nav class="header-nav">
             <ul>
-                <li class="expandable" data-super-nav="dashboards" id="open-nav">Dashboards</li>
-                <li><a href="/articles/">Articles</a></li>
-                <li><a href="/about/">About</a></li>
+                <li>
+                    <a class="expandable" id="open-dashboard-menu">Dashboards</a>
+                </li>
+                <li>
+                    <a href="/articles/">Articles</a>
+                </li>
+                <li>
+                    <a href="/about/">About</a>
+                </li>
+                <li class="mobile">
+                    <a class="expandable" id="open-mobile-menu">Menu</a>
+                </li>
             </ul>
         </nav>
     </div>
@@ -62,11 +73,56 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
             </div>
         </div>
     </nav>
+
+    <nav class="mobile-navigation hidden" id="mobile-nav">
+        <ul>
+            <li>
+                <a class="expandable" id="open-mobile-dashboard-menu">Dashboards</a>
+                <ul class="hidden" id="mobile-dashboard-nav">
+                    <li>
+                        <a href="/dashboards/climate-and-weather/">Climate &amp; weather</a>
+                    </li>
+                    <li>
+                        <a href="/dashboards/emissions/">Emissions</a>
+                    </li>
+                    <li>
+                        <a href="/dashboards/drivers/">Drivers</a>
+                    </li>
+                    <li>
+                        <a href="/dashboards/impacts">Impacts</a>
+                    </li>
+                    <li>
+                        <a href="/dashboards/adaptation">Adaptation</a>
+                    </li>
+                    <li>
+                        <a href="/dashboards/mitigation">Mitigation</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/articles/">Articles</a>
+            </li>
+            <li>
+                <a href="/about/">About</a>
+            </li>
+        </ul>
+    </nav>
 </header>
 
 <script>
-    document.getElementById('open-nav').addEventListener('click', event => {
+    document.getElementById('open-dashboard-menu').addEventListener('click', event => {
+        event.target.parentElement.classList.toggle("open");
         document.getElementById('dashboard-nav').classList.toggle("hidden");
+    });
+
+    document.getElementById('open-mobile-menu').addEventListener('click', event => {
+        event.target.classList.toggle("open");
+        document.getElementById('mobile-nav').classList.toggle("hidden");
+    });
+
+    document.getElementById('open-mobile-dashboard-menu').addEventListener('click', event => {
+        event.target.classList.toggle("open");
+        document.getElementById('mobile-dashboard-nav').classList.toggle("hidden");
     });
 </script>
 
@@ -107,19 +163,6 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
         background-color: var(--color-yellow);
     }
 
-    @media screen and (max-width: 768px) {
-        .header-nav {
-            display: none;
-        }
-    }
-
-    .header-nav a {
-        text-decoration: none;
-        color: var(--color-white);
-        background: black;
-        height: 48px;
-    }
-
     svg {
         position: relative;
         top: 3px;
@@ -133,28 +176,7 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
         font-weight: 700;
     }
 
-    .header-nav {
-        float: right;
-        color: var(--color-white);
-        font-family: 'GDS Transport Bold', sans-serif;
-        font-weight: 700;
-        font-size: 16px;
-    }
-
-    .header-nav ul li {
-        display: inline-block;
-        padding: 8px 24px;
-        margin: 2px 0;
-        box-sizing: border-box;
-        border-left: 1px solid var(--color-dark-grey);
-        cursor: pointer;
-    }
-
-    .header-nav ul li:first-child {
-        border: 0;
-    }
-
-    .super-navigation {
+    .super-navigation, .mobile-navigation {
         box-sizing: border-box;
         padding: 40px 0;
         color: var(--color-text);
@@ -166,6 +188,12 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
         font-size: 16px;
     }
 
+    @media screen and (max-width: 768px) {
+        .super-navigation {
+            display: none;
+        }
+    }
+
     .super-navigation a {
         font-family: 'GDS Transport Bold', sans-serif;
         font-weight: 700;
@@ -174,6 +202,84 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
     .super-navigation .description {
         font-size: 24px;
         line-height: 32px;
+    }
+
+    .mobile-navigation {
+        padding: 0;
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .mobile-navigation {
+            display: block;
+        }
+    }
+
+    .mobile-navigation.hidden {
+        display: none;
+    }
+
+    .mobile-navigation ul li {
+        box-sizing: border-box;
+        border-bottom: 1px solid var(--color-border);
+    }
+
+    .mobile-navigation ul li > ul {
+        margin: 24px 0 40px 24px;
+        
+    }
+
+    .mobile-navigation ul li > ul.hidden {
+        display: none;
+    }
+
+    .mobile-navigation ul li > ul li {
+        border: 0;
+        margin: 0 16px 16px;
+    }
+
+    .mobile-navigation ul li > ul li a {
+        font-family: 'GDS Transport', sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0;
+        display: inline;
+        text-decoration: underline;
+    }
+
+    .mobile-navigation ul li a {
+        padding: 24px 16px;
+        display: block;
+        font-size: 19px;
+        line-height: 24px;
+        font-weight: 700;
+        font-family: 'GDS Transport Bold', sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .mobile-navigation ul li a.expandable::before {
+        content: '';
+        height: 8px;
+        width: 8px;
+        border-right: 2px solid var(--color-brand);
+        border-bottom: 2px solid var(--color-brand);
+        display: inline-block;
+        margin-right: 12px;
+        transform: rotate(45deg);
+        position: relative;
+        top: -4px;
+    }
+
+    .mobile-navigation ul li a.expandable:hover::before {
+        border-right: 2px solid var(--color-dark-blue);
+        border-bottom: 2px solid var(--color-dark-blue);
+    }
+
+    .mobile-navigation ul li a.expandable.open::before {
+        transform: rotate(225deg);
+        top: 2px;
     }
 
     @media screen and (max-width: 768px) {
@@ -219,5 +325,115 @@ const headerClass = "govuk-header " + (alternativeAccent ? "alternative-accent" 
 
     .super-navigation.hidden {
         display: none;
+    }
+
+    .header-nav {
+        float: right;
+    }
+
+    .header-nav ul li {
+        float: left;
+    }
+
+    .header-nav ul li.open {
+        background-color: var(--color-light-grey);
+    }
+
+    .header-nav ul li.open a {
+        color: var(--color-brand);
+    }
+
+    .header-nav ul li.open a::after {
+        content: '';
+        height: 4px;
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        background-color: var(--color-brand);
+        display: inline-block;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+    }
+
+    .header-nav ul li:hover {
+        cursor: pointer;
+    }
+
+    .header-nav ul li.mobile {
+        display: none;
+    }
+
+    @media screen and (max-width: 768px) {
+        .header-nav ul li.mobile {
+            display: inline-block;
+        }
+
+        .header-nav ul li:not(.mobile) a {
+            display: none;
+        }
+    }
+
+    .header-nav ul li a {
+        font-family: 'GDS Transport Bold', sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: var(--color-white);
+        line-height: 48px;
+        padding: 10px 24px;
+        text-decoration: none;
+        border-left: 1px solid var(--color-dark-grey);
+        box-sizing: border-box;
+        position: relative;
+    }
+
+    .header-nav ul li a:hover::after {
+        content: '';
+        height: 4px;
+        width: calc(100% - 40px);
+        margin: 0 20px;
+        background-color: var(--color-mid-grey);
+        display: inline-block;
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+    }
+
+    .header-nav ul li:first-child a {
+        border-left: 0;
+    }
+
+    .header-nav ul li a:hover {
+        color: var(--color-mid-grey);
+    }
+
+    .header-nav ul li a.expandable::before {
+        content: '';
+        height: 8px;
+        width: 8px;
+        border-right: 2px solid var(--color-white);
+        border-bottom: 2px solid var(--color-white);
+        display: inline-block;
+        margin-right: 12px;
+        transform: rotate(45deg);
+        position: relative;
+        top: -4px;
+    }
+
+    .header-nav ul li.open a.expandable::before {
+        border-right: 2px solid var(--color-brand);
+        border-bottom: 2px solid var(--color-brand);
+        transform: rotate(225deg);
+        top: 2px;
+    }
+
+    .header-nav ul li a.expandable:hover::before {
+        border-right: 2px solid var(--color-mid-grey);
+        border-bottom: 2px solid var(--color-mid-grey);
+    }
+
+    @media screen and (max-width: 768px) {
+        .service-name {
+            display: none;
+        }
     }
 </style>
