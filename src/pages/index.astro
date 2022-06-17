@@ -41,7 +41,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 			<main>
 				<section class="overview">
 					{OverviewTiles.map((tile) => (
-						<OverviewTile subheading={ tile.subheading } heading={ tile.heading } data={ tile.data } />
+						<OverviewTile subheading={ tile.subheading } heading={ tile.heading } chartImg={ tile.chartImg } link={ tile.link } />
 					))}
 				</section>
 				<div class="content">

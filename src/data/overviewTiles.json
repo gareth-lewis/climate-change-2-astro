@@ -2,6 +2,8 @@
     {
         "subheading": "Climate and weather",
         "heading": "Annual mean temperature (&deg;C) for the UK",
+        "chartImg": "/images/charts/home/climate-and-weather.svg",
+        "link": "/dashboards/climate-and-weather",
         "data": [
             {
                 "label": "1884",
@@ -23,6 +25,8 @@
     {
         "subheading": "Emissions",
         "heading": "Greenhouse gas emissions (Mt CO2e)",
+        "chartImg": "/images/charts/home/emissions.svg",
+        "link": "/dashboards/emissions",
         "data": [
             {
                 "label": "1990",
@@ -44,6 +48,7 @@
     {
         "subheading": "Drivers",
         "heading": "Fossil fuel energy use (Mtoe) for the four highest sectors in the UK",
+        "chartImg": "/images/charts/home/drivers.svg",
         "data": [
             {
                 "label": "1990",
@@ -65,6 +70,7 @@
     {
         "subheading": "Impacts",
         "heading": "Ecological status of surface waters in England, 2019",
+        "chartImg": "/images/charts/home/impacts.svg",
         "data": [
             {
                 "label": "Good",
@@ -81,6 +87,7 @@
     {
         "subheading": "Mitigation",
         "heading": "Renewable energy share in total energy consumption, UK, 2020",
+        "chartImg": "/images/charts/home/impacts.svg",
         "data": [
             {
                 "label": "Renewable",
@@ -97,6 +104,8 @@
     {
         "subheading": "Adaptation",
         "heading": "New planting of UK woodlands, thousand hectares",
+        "chartImg": "/images/charts/home/adaptation.svg",
+        "link": "/dashboards/adaptation",
         "data": [
             {
                 "label": "1976",
