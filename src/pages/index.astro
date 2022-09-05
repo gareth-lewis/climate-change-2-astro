@@ -35,7 +35,7 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 	<body>
 		<Header serviceName={serviceName} alternativeAccent={true} />
 
-		<Hero heading={heading} description={subheading} callToAction={callToAction} href={href} heroImage="/images/earth.svg" />
+		<Hero heading={heading} description={subheading} callToAction={callToAction} href={href} heroImage="/images/hero2.webp" />
 
 		<div class="govuk-container">
 			<main>
@@ -81,6 +81,8 @@ allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(
 	}
 
 	main {
+		position: relative;
+		z-index: 10;
 		margin-top: -48px;
 	}
 

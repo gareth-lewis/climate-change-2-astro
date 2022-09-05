@@ -14,25 +14,45 @@ const { heading, description, callToAction, href, heroImage } = Astro.props;
     <div class="govuk-container">
         <div class="hero-content">
             <div class="summary">
-                <h1 class="heading-xl">{ heading }</h1>
+                <div class="hero-header">
+                    <h2>Latest article</h2>
+                    <h1 class="heading-xl">{ heading }</h1>
+                </div>
                 <p>{ description }</p>
                 <a href={href} class="btn">{ callToAction }</a>
             </div>
-            <div class="hero-image" style={"background-image: url(" + heroImage + ")"}></div>
         </div>
     </div>
+    <div class="hero-image" style={"background-image: url(" + heroImage + ")"}></div>
+    <div class="overlay"></div>
 </section>
 
 <style>
     .page-hero {
-        background-color: var(--color-brand);
+        background: var(--color-brand);
         color: var(--color-white);
+        position: relative;
+    }
+
+    .overlay {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, #1D70B8 0%, #1D70B8 44%, rgba(29, 112, 184, 0) 100%);
+        z-index: 10;
     }
 
     .hero-content {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        position: relative;
+        z-index: 50;
+        width: 50%;
         gap: 48px;
+    }
+
+    .hero-header {
+        margin-bottom: 16px;
     }
 
     @media screen and (max-width: 768px) {
@@ -52,9 +72,16 @@ const { heading, description, callToAction, href, heroImage } = Astro.props;
     }
 
     .hero-image {
-        background-size: contain;
+        position: absolute;
+        width: calc(50vw + 128px);
+        height: 100%;
+        top: 0;
+        right: 0;
+        background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
+        filter: saturate(0);
+        mix-blend-mode: screen;
     }
 
     @media screen and (max-width: 768px) {
@@ -63,14 +90,10 @@ const { heading, description, callToAction, href, heroImage } = Astro.props;
         }
     }
 
-    h1 {
-        margin-bottom: 16px;
-    }
-
     p {
         font-size: 24px;
         line-height: 32px;
-        margin-bottom: 32px;
+        margin-bottom: 40px;
     }
 
     @media screen and (max-width: 768px) {
