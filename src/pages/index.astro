@@ -23,7 +23,7 @@ let callToAction = "Read the article";
 let href = "/articles/measuring-uk-greenhouse-gas-emissions/"
 
 // Data Fetching: List all Markdown posts in the repo.
-let allPosts = await Astro.fetchContent('./articles/*.md');
+let allPosts = await Astro.glob('./articles/*.md');
 allPosts = allPosts.sort((a, b) => new Date(b.publishDate).valueOf() - new Date(a.publishDate).valueOf());
 ---
 
